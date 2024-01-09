@@ -45,7 +45,11 @@ export default function Summary() {
             value={items.reduce((prev, cur) => prev + Number(cur.price), 0)}
           />
         </div>
-        <Button className="mt-6 w-full" onClick={onCheckout}>
+        <Button
+          className="mt-6 w-full"
+          onClick={onCheckout}
+          disabled={items.length === 0}
+        >
           Checkout
         </Button>
       </div>
