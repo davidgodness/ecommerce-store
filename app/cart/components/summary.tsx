@@ -20,7 +20,7 @@ export default function Summary() {
     }
 
     if (searchParams.has("canceled")) {
-      toast.error("Something went wrong");
+      toast.error("Order Canceled");
     }
   }, [searchParams, removeAll]);
 
